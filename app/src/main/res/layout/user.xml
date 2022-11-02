@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:scaleType="fitXY"
-            android:src="@drawable/user_top_Image"></ImageView>
+            android:src="@drawable/user_top_image"/>
 
 
         <ImageView
@@ -26,7 +26,7 @@
             android:layout_below="@+id/user_top_image"
             android:layout_marginTop="-50dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/user_Image"></ImageView>
+            android:src="@drawable/user_image"/>
 
     </RelativeLayout>
 
@@ -34,63 +34,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"></LinearLayout>
+        android:layout_weight="7"/>
 
     <!-- 这是底部的导航栏 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="1"
-        android:background="#D3D1D1"
-        android:baselineAligned="false"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-
-        <!-- 第一个标签控件 -->
-        <LinearLayout
-            android:id="@+id/ll_first"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TabButton"
-                android:text="@string/menu_first"
-                app:drawableTopCompat="@drawable/tab_first_selector" />
-        </LinearLayout>
-
-        <!-- 第二个标签控件 -->
-        <LinearLayout
-            android:id="@+id/ll_second"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TabButton"
-                android:text="@string/menu_second"
-                app:drawableTopCompat="@drawable/tab_second_selector" />
-        </LinearLayout>
-
-        <!-- 第三个标签控件 -->
-        <LinearLayout
-            android:id="@+id/ll_third"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/TabButton"
-                android:text="@string/menu_third"
-                app:drawableTopCompat="@drawable/tab_third_selector" />
-        </LinearLayout>
-    </LinearLayout>
-
-
-
+    <include android:id="@+id/tabbar" layout="@layout/tabbar" />
 
 </LinearLayout>

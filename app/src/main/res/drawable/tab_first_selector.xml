@@ -1,5 +1,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:state_selected="true" android:drawable="@drawable/index_isSelected" />
-    <item android:drawable="@drawable/index_noSelected" />
+        android:state_selected="true" android:drawable="@drawable/index_isselected" />
+    <item android:drawable="@drawable/index_noselected" />
 </selector>
