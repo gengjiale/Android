@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_weight="1"
+    android:background="#D3D1D1"
+    android:baselineAligned="false"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+        <!-- 第一个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:text="@string/menu_first"
+                app:drawableTopCompat="@drawable/tab_first_selector" />
+        </LinearLayout>
+
+        <!-- 第二个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:text="@string/menu_second"
+                app:drawableTopCompat="@drawable/tab_second_selector" />
+        </LinearLayout>
+
+        <!-- 第三个标签控件 -->
+        <LinearLayout
+            android:id="@+id/ll_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TabButton"
+                android:text="@string/menu_third"
+                app:drawableTopCompat="@drawable/tab_third_selector" />
+        </LinearLayout>
+</LinearLayout>
