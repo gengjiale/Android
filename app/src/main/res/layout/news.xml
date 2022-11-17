@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/news"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/newsTitleView_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/news_menu" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="校内新闻"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/news_ListView_a"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/news_back"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/newsTitleView_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/news_menu" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="校外新闻"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/news_ListView_b"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/news_back"
+        android:padding="10dp" />
+</LinearLayout>
