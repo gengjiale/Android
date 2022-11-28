@@ -58,7 +58,7 @@
             <LinearLayout
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
@@ -87,12 +87,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
+                    android:layout_marginTop="-15dp"
                     >
 
                     <TextView
                         android:id="@+id/cityView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
                         android:layout_marginRight="5dp"
                         android:text="上海市"
                         android:textStyle="bold"
@@ -119,7 +121,7 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
@@ -127,7 +129,8 @@
                     android:id="@+id/weaImageView"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="20dp"
+
                     android:layout_marginBottom="14dp"
                     android:adjustViewBounds="true"
                     app:srcCompat="@drawable/b_qing" />
@@ -161,7 +164,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:layout_marginTop="30dp"
+
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:orientation="horizontal">
@@ -183,7 +186,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/newsListView"
+        android:id="@+id/USSTnewsListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"

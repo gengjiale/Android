@@ -25,10 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
         app:itemBackground="@null"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu"
 
-        />
+        app:menu="@menu/bottom_menu" />
 
 </RelativeLayout>
